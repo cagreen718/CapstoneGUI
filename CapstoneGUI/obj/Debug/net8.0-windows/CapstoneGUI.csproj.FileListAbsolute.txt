@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\CapstoneGUI\bin\Debug\net8.0-windows\CapstoneGUI.exe
+C:\Users\user\source\repos\CapstoneGUI\bin\Debug\net8.0-windows\CapstoneGUI.deps.json
+C:\Users\user\source\repos\CapstoneGUI\bin\Debug\net8.0-windows\CapstoneGUI.runtimeconfig.json
+C:\Users\user\source\repos\CapstoneGUI\bin\Debug\net8.0-windows\CapstoneGUI.dll
+C:\Users\user\source\repos\CapstoneGUI\bin\Debug\net8.0-windows\CapstoneGUI.pdb
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.Form1.resources
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.Properties.Resources.resources
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.csproj.GenerateResource.cache
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.AssemblyInfo.cs
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.dll
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\refint\CapstoneGUI.dll
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.pdb
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\CapstoneGUI.genruntimeconfig.cache
+C:\Users\user\source\repos\CapstoneGUI\obj\Debug\net8.0-windows\ref\CapstoneGUI.dll
