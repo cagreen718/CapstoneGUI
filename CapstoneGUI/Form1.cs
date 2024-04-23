@@ -23,7 +23,8 @@ namespace CapstoneGUI
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
-        {
+        { //Source:  //source:  https://learn.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-8.0
+            // Input Validation 
             if (rBtnShirt.Checked && rBtnMenHat.Checked)
             {
                 decimal ShirHat = 62.99m;
@@ -77,7 +78,9 @@ namespace CapstoneGUI
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            //Source: 
+            //Source: https://learn.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-8.0
+
+            //Source: https://stackoverflow.com/questions/20270547/c-sharp-calculating-decimal-numbers-from-textboxes
             rBtnMenHat.Checked = false;
             rBtnMenPant.Checked = false;
             rBtnShirt.Checked = false;
