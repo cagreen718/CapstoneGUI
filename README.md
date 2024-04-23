@@ -1,4 +1,4 @@
 # CapstoneGUI
 * Carnell Greenfield III
 * Visual Studio
-* The toughest challenge was creating the carasel.
+* Button, Checkboxes, and Picture boxes are present.
