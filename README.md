@@ -1,4 +1,5 @@
 # CapstoneGUI
-* Carnell Greenfield III
+* Capstone Project and Carnell Greenfield III
 * Visual Studio
-* Button, Checkboxes, and Picture boxes are present.
+* Form1.cs
+* The issue was displaying multiple images so the alternative was listing the options in radio boxes.
