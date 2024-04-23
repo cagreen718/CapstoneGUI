@@ -7,23 +7,16 @@ namespace CapstoneGUI
             InitializeComponent();
         }
 
+       
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
 
-        //sorce for slider:  https://youtu.be/Ie09lhMEczU?si=BLNmPTHUz50mxYhl
 
-        private int imageNumber = 1;
 
-        private void LoadNextImage()
-        {
-            if (imageNumber == 6)
-            {
-                imageNumber = 1;
-            }
-            slidePic.ImageLocation = string.Format(@"Images\{0}.jpg", imageNumber);
-        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
 
@@ -31,39 +24,54 @@ namespace CapstoneGUI
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            if (rBtnShirt.Checked &&rBtnMenHat.Checked)
+            if (rBtnShirt.Checked && rBtnMenHat.Checked)
             {
                 decimal ShirHat = 62.99m;
                 textBoxResult.Text = ShirHat.ToString();
             }
-            if (rBtnShirt.Checked &&rBtnMenPant.Checked)
+            if(rBtnShirt.Checked && rBtnWomenPant.Checked && rBtnWomenHat.Checked)
+            {
+                decimal WoManComb = 69.98m;
+                textBoxResult.Text=WoManComb.ToString();
+            }
+            if (rBtnShirt.Checked && rBtnMenPant.Checked)
             {
                 decimal ShirPant = 98.99m;
-                textBoxResult.Text=ShirPant.ToString();
+                textBoxResult.Text = ShirPant.ToString();
             }
             if (rBtnMenHat.Checked && rBtnMenPant.Checked)
             {
                 decimal hatPant = 52.98m;
-                textBoxResult.Text= hatPant.ToString();
+                textBoxResult.Text = hatPant.ToString();
             }
-            if(rBtnShirt.Checked && rBtnMenHat.Checked && rBtnMenPant.Checked)
+            if (rBtnShirt.Checked && rBtnMenHat.Checked && rBtnMenPant.Checked)
             {
                 decimal comp = 103.12m;
-                textBoxResult.Text=comp.ToString();
+                textBoxResult.Text = comp.ToString();
             }
-            if((rBtnWomenShir.Checked &&rBtnWomenPant.Checked&&rBtnWomenHat.Checked))
+            if (rBtnWomenShir.Checked && rBtnWomenPant.Checked && rBtnWomenHat.Checked)
             {
                 decimal womComp = 172.73m;
-                textBoxResult.Text= womComp.ToString();
+                textBoxResult.Text = womComp.ToString();
+            }
+            if (rBtnWomenShir.Checked && rBtnMenPant.Checked && rBtnMenHat.Checked)
+            {
+                decimal WoComp = 105.32m;
+                textBoxResult.Text=WoComp.ToString();   
             }
             if (rBtnWomenHat.Checked && rBtnWomenPant.Checked)
             {
                 decimal womHapa = 52.99m;
-                textBoxResult.Text = womHapa.ToString();    
+                textBoxResult.Text = womHapa.ToString();
+            }
+            if (rBtnWomenShir.Checked && rBtnWomenPant.Checked)
+            {
+                decimal womShirPant = 45.78m;
+                textBoxResult.Text =womShirPant.ToString();   
             }
             else
             {
-                MessageBox.Show("Options must be in Seperate Boxes");
+                
             }
         }
 
@@ -82,6 +90,25 @@ namespace CapstoneGUI
         private void textBoxResult_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblTop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //source: https://youtu.be/TsyddVNbXHk?si=Si58O0tZJRq7kk-4
+            StreamReader sr = new StreamReader(@"C:\Users\user\source\repos\A7GUI\savings.txt");
+
+            string x = sr.ReadToEnd();
+            string[] y = x.Split('\n');
+            string[] mon = { y[0], y[2], y[4], y[6], y[8], y[10], y[12], y[14], y[16], y[18], y[20], y[22] };
+            foreach (string s in mon)
+            {
+                comboBox1.Items.Add(s);
+            }
         }
     }
 }

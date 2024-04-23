@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            slidePic = new PictureBox();
             lblTop = new Label();
             groupBox1 = new GroupBox();
             rBtnWomenShir = new RadioButton();
@@ -44,32 +42,24 @@
             btnCalculate = new Button();
             btnClear = new Button();
             textBoxResult = new TextBox();
-            timer1 = new System.Windows.Forms.Timer(components);
-            ((System.ComponentModel.ISupportInitialize)slidePic).BeginInit();
+            pictureBox1 = new PictureBox();
+            comboBox1 = new ComboBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // slidePic
-            // 
-            slidePic.Image = (Image)resources.GetObject("slidePic.Image");
-            slidePic.Location = new Point(474, 127);
-            slidePic.Name = "slidePic";
-            slidePic.Size = new Size(319, 333);
-            slidePic.TabIndex = 1;
-            slidePic.TabStop = false;
-            slidePic.Click += pictureBox2_Click;
             // 
             // lblTop
             // 
             lblTop.AutoSize = true;
             lblTop.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            lblTop.Location = new Point(536, 54);
+            lblTop.Location = new Point(574, 64);
             lblTop.Name = "lblTop";
-            lblTop.Size = new Size(206, 38);
+            lblTop.Size = new Size(152, 38);
             lblTop.TabIndex = 2;
-            lblTop.Text = "Clothing Store";
+            lblTop.Text = "Check Out";
+            lblTop.Click += lblTop_Click;
             // 
             // groupBox1
             // 
@@ -176,7 +166,7 @@
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(112, 34);
             btnCalculate.TabIndex = 6;
-            btnCalculate.Text = "Calculate";
+            btnCalculate.Text = "Checkout";
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
@@ -198,11 +188,22 @@
             textBoxResult.TabIndex = 8;
             textBoxResult.TextChanged += textBoxResult_TextChanged;
             // 
-            // timer1
+            // pictureBox1
             // 
-            timer1.Enabled = true;
-            timer1.Interval = 10;
-            timer1.Tick += timer1_Tick;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(546, 123);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(202, 151);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(1018, 333);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(182, 33);
+            comboBox1.TabIndex = 10;
             // 
             // Form1
             // 
@@ -210,6 +211,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1376, 983);
+            Controls.Add(comboBox1);
+            Controls.Add(pictureBox1);
             Controls.Add(textBoxResult);
             Controls.Add(btnClear);
             Controls.Add(btnCalculate);
@@ -217,23 +220,21 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(lblTop);
-            Controls.Add(slidePic);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)slidePic).EndInit();
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox slidePic;
         private Label lblTop;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
@@ -247,6 +248,7 @@
         private Button btnCalculate;
         private Button btnClear;
         private TextBox textBoxResult;
-        private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox1;
+        private ComboBox comboBox1;
     }
 }
